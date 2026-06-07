@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱心网站</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff5f7;
+            background-image: linear-gradient(45deg, #fff5f7 0%, #ffebef 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(252, 161, 195, 0.3);
+            max-width: 500px;
+        }
+        h1 {
+            color: #ff6b9d;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .heart {
+            font-size: 80px;
+            color: #ff6b9d;
+            margin: 20px 0;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .button {
+            background: linear-gradient(45deg, #ff6b9d, #ff9eb6);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
+        }
+        .button:hover {
+            background: linear-gradient(45deg, #ff5a92, #ff8cab);
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(255, 107, 157, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>欢迎访问爱心网站</h1>
+        <p>这是一个爱心网站的默认首页，请通过后台管理系统设置您想要展示的爱心页面。</p>
+        <a href="admin_index.php" class="button">进入管理后台</a>
+    </div>
+</body>
+</html> 

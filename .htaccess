@@ -1,0 +1,22 @@
+# 默认首页设置
+DirectoryIndex g.html
+
+# 启用PHP处理
+<IfModule mod_php7.c>
+    php_flag display_errors off
+    php_value max_execution_time 300
+    php_value max_input_time 300
+    php_value upload_max_filesize 50M
+    php_value post_max_size 50M
+</IfModule>
+
+# 禁止目录列表
+Options -Indexes
+
+# 设置字符集
+AddDefaultCharset UTF-8
+
+# 强制使用HTTPS（如果需要）
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
